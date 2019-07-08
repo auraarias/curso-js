@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+$black: #000000;
+$gray: #4D4D4D;
+$pink: #EFC1AC;
+$blueish: #afafee;
+$blue: #333372;
+$white: #FFFFFF;
+$shadow: rgba(0, 0, 0, 0.7);
+
+* {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: all 0.15s ease-in-out;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+
+    &::selection {
+        background: $pink;
+        color: $white;
+    }
+}
+
+body {
+
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+
+    // GLOBAL MENU
+
+    #header-nav {
+        display: flex;
+        flex-direction: column;
+        // background: yellow;
+        justify-content: center;
+        flex: 0 1 auto;
+        height: 100%;
+        width:350px;
+
+        // LOGO AND NAME
+
+        #name {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            // background: red;
+            margin: 10px 60px 60px 60px;
+
+
+            img {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 10px;
+            }
+
+            h1{
+                font-weight:900; 
+                margin-bottom: 10px;
+                color: $gray;
+            }
+        }
+
+        // MENU ITEMS
+
+        #menu {
+
+
+            border-style: solid;
+            border-width: 0px 0px 0.5px 0px;
+            border-bottom-color: #e6e6e6;
+
+
+            li {
+                height: 100%;
+
+                a {
+                    color: $gray;
+                    font-size: 15px;
+                    font-weight: bold;
+                    padding: 18px 0px 18px 0px;
+                    // background: orangered;
+                    border-color: #e6e6e6;
+                    border-style: solid;
+                    border-width: 0.5px 0px 0px 0px;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                a:hover{
+                    border-right-style: solid;
+                    border-right-color: $blue;
+                    border-right-width: 4px;
+                    font-weight: 400;
+                    background: #f2f2f9;
+                    
+                    
+                }
+
+
+            }
+        }
+
+        // SOCIAL MEDIA
+
+        #social-media {
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            // background: blue;
+            margin-top: 50px;
+            
+            
+            img {
+                width: 28px;
+                height: 28px;
+                margin: 15px;
+                align-self: center;
+                padding: 5px;
+            }
+
+            img:hover{
+                background: $pink;
+                
+            }
+
+           
+            
+        }
+    }
+
+    #content {
+        flex: 1 1 auto;
+        background: green;
+    }
+
+
+
+
+
+
+
+
+}
