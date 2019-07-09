@@ -40,14 +40,32 @@ body #header-nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 auto;
           flex: 0 1 auto;
   height: 100%;
   width: 350px;
+  position: relative;
+}
+
+body #header-nav #hide-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: blue;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+body #header-nav #hide-button img {
+  height: 20px;
+  width: 20px;
 }
 
 body #header-nav #name {
@@ -66,7 +84,6 @@ body #header-nav #name {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 10px 60px 60px 60px;
 }
 
 body #header-nav #name img {
@@ -121,30 +138,62 @@ body #header-nav #social-media {
   display: flex;
   -ms-flex-item-align: center;
       align-self: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 45%;
+}
+
+body #header-nav #social-media li {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 50px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body #header-nav #social-media img {
-  width: 28px;
-  height: 28px;
-  margin: 15px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  padding: 5px;
+body #header-nav #social-media li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body #header-nav #social-media img:hover {
+body #header-nav #social-media li a img {
+  height: 16px;
+  -webkit-transition-duration: 10s;
+          transition-duration: 10s;
+}
+
+body #header-nav #social-media li:hover {
   background: #EFC1AC;
+}
+
+body #header-nav #social-media li:hover a img {
+  height: 18px;
+  -webkit-filter: brightness(1000%);
+          filter: brightness(1000%);
 }
 
 body #content {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  background: green;
+  background: #afafee;
 }
 /*# sourceMappingURL=Style.css.map */

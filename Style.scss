@@ -37,10 +37,29 @@ body {
         display: flex;
         flex-direction: column;
         // background: yellow;
-        justify-content: center;
+        justify-content: space-around;
         flex: 0 1 auto;
         height: 100%;
-        width:350px;
+        width: 350px;
+        position: relative;
+
+        // EYES BUTTON
+
+        #hide-button {
+            display: flex;
+            justify-content: flex-end;
+            background: blue;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+
+            img {
+
+                height: 20px;
+                width: 20px;
+            }
+        }
+
 
         // LOGO AND NAME
 
@@ -51,7 +70,6 @@ body {
             align-content: center;
             align-items: center;
             // background: red;
-            margin: 10px 60px 60px 60px;
 
 
             img {
@@ -60,8 +78,8 @@ body {
                 margin-bottom: 10px;
             }
 
-            h1{
-                font-weight:900; 
+            h1 {
+                font-weight: 900;
                 margin-bottom: 10px;
                 color: $gray;
             }
@@ -70,12 +88,9 @@ body {
         // MENU ITEMS
 
         #menu {
-
-
             border-style: solid;
             border-width: 0px 0px 0.5px 0px;
             border-bottom-color: #e6e6e6;
-
 
             li {
                 height: 100%;
@@ -93,14 +108,14 @@ body {
                     justify-content: center;
                 }
 
-                a:hover{
+                a:hover {
                     border-right-style: solid;
                     border-right-color: $blue;
                     border-right-width: 4px;
                     font-weight: 400;
                     background: #f2f2f9;
-                    
-                    
+
+
                 }
 
 
@@ -112,32 +127,48 @@ body {
         #social-media {
             display: flex;
             align-self: center;
-            justify-content: center;
-            // background: blue;
-            margin-top: 50px;
-            
-            
-            img {
-                width: 28px;
-                height: 28px;
-                margin: 15px;
-                align-self: center;
-                padding: 5px;
-            }
+            justify-content: space-between;
+            width: 45%;
 
-            img:hover{
-                background: $pink;
+            li {
+                width: 40px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+
+                a {
+                    
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                    img {
+                        height: 16px;
+                        transition-duration: 10s;
+                    }
+                }
                 
+                &:hover {
+                    background: $pink;
+                    a {
+                        img {
+                            height: 18px;
+                            filter: brightness(1000%);
+                        }
+                    }
+                }
             }
 
-           
-            
+
+
         }
     }
 
     #content {
         flex: 1 1 auto;
-        background: green;
+        background: $blueish;
     }
 
 
