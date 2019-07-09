@@ -37,7 +37,8 @@ body {
         display: flex;
         flex-direction: column;
         // background: yellow;
-        justify-content: space-around;
+        justify-content: space-evenly;
+        align-content: center;
         flex: 0 1 auto;
         height: 100%;
         width: 350px;
@@ -48,9 +49,9 @@ body {
         #hide-button {
             display: flex;
             justify-content: flex-end;
-            background: blue;
+            // background: blue;
             position: absolute;
-            top: 20px;
+            top: 10px;
             right: 20px;
 
             img {
@@ -69,19 +70,19 @@ body {
             justify-content: center;
             align-content: center;
             align-items: center;
+            height: 200px;
             // background: red;
 
 
             img {
-                width: 100px;
-                height: 100px;
-                margin-bottom: 10px;
+                
+                height: 60px;
+                
             }
 
             h1 {
                 font-weight: 900;
-                margin-bottom: 10px;
-                color: $gray;
+                color: $black;
             }
         }
 
@@ -91,6 +92,7 @@ body {
             border-style: solid;
             border-width: 0px 0px 0.5px 0px;
             border-bottom-color: #e6e6e6;
+            
 
             li {
                 height: 100%;
@@ -129,6 +131,7 @@ body {
             align-self: center;
             justify-content: space-between;
             width: 45%;
+            
 
             li {
                 width: 40px;
@@ -146,7 +149,7 @@ body {
                 align-items: center;
                     img {
                         height: 16px;
-                        transition-duration: 10s;
+                        transition-duration: 0.5s;
                     }
                 }
                 
@@ -168,7 +171,106 @@ body {
 
     #content {
         flex: 1 1 auto;
-        background: $blueish;
+        
+        
+        // HOME
+
+        #home {
+
+            background: $blueish;
+            height: 100%;
+            display: flex;
+            color: $white;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+
+            #home-content{
+                
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                height: 60%;
+
+                #home-text {
+
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 150px;
+                    // background: yellow;
+
+                    h2{
+                        font-size: 30px;
+                        font-weight: 400;
+                    }
+
+                    h1 {
+                        font-size: 70px;
+                    }
+
+                    p{
+                        font-size: 20px;
+                    }
+                }
+
+                // BUTTON
+
+                .button {
+                    border-radius: 5px;
+                    background-color:$blueish;
+                    border: solid;
+                    color: #FFFFFF;
+                    text-align: center;
+                    font-size: 18px;
+                    padding: 10px;
+                    width: 250px;
+                    height: 50px;
+                    transition: all 0.5s;
+                    cursor: pointer;
+                    
+                  }
+                  
+                  .button span {
+                    cursor: pointer;
+                    display: inline-block;
+                    position: relative;
+                    transition: 0.5s;
+                  }
+                  
+                  .button span:after {
+                    content: '\00bb';
+                    position: absolute;
+                    opacity: 0;
+                    top: 0;
+                    right: -20px;
+                    transition: 0.5s;
+                    
+                  }
+
+                  .button:hover {
+                      background: $blue;
+                      font-weight: 400;
+                      border: none;
+                      
+                  }
+                  
+                  .button:hover span {
+                    padding-right: 25px;
+                    
+                  }
+                  
+                  .button:hover span:after {
+                    opacity: 1;
+                    right: 0;
+                    
+                  }
+               
+                
+            }
+        }
     }
 
 
