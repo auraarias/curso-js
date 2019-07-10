@@ -27,7 +27,6 @@
   text-decoration: none;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
-  list-style: none;
   scroll-behavior: smooth;
   font-family: 'Poppins', sans-serif;
 }
@@ -528,7 +527,7 @@ body #content #about-me #four-areas #creative-thinking {
           align-items: center;
 }
 
-body #content #about-me #four-areas #responsability {
+body #content #about-me #four-areas #responsibility {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -688,5 +687,92 @@ body #content #contact #contact-content #contact-info div {
 
 body #content #contact #contact-content #contact-info img {
   height: 40px;
+}
+
+body #portfolio-content {
+  background: blue;
+  width: 100%;
+  height: 100%;
+}
+
+body #portfolio-content #nav-bar-portfolio {
+  background: rgba(255, 255, 255, 0.658);
+  height: 100%;
+  width: 450px;
+  right: 0px;
+  position: absolute;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body #portfolio-content #nav-bar-portfolio h1 {
+  font-weight: 700;
+  color: #000000;
+  padding-bottom: 20px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #333372;
+          text-decoration-color: #333372;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  position: absolute;
+  top: 100px;
+  right: 150px;
+  font-size: 30px;
+}
+
+body #portfolio-content #nav-bar-portfolio ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 500px;
+}
+
+body #portfolio-content #nav-bar-portfolio ol li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-color: #e6e6e6;
+  border-top-style: solid;
+  border-top-width: 0.5px;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #portfolio-content #nav-bar-portfolio ol li a {
+  color: #383838;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+body #portfolio-content #nav-bar-portfolio ol li p {
+  font-size: 14px;
+  padding-right: 20px;
+  font-weight: 500;
+}
+
+body #portfolio-content #nav-bar-portfolio ol li:hover {
+  background: #FFFFFF;
+}
+
+body #portfolio-content #nav-bar-portfolio ol li:hover a {
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */

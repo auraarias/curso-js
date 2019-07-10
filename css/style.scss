@@ -34,7 +34,6 @@ $shadow: rgba(0, 0, 0, 0.7);
     padding: 0;
     text-decoration: none;
     transition: all 0.15s ease-in-out;
-    list-style: none;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
 
@@ -237,7 +236,7 @@ body {
         }
     }
 
-
+    //HOME CONTENT
 
     #content {
         flex: 1 1 auto;
@@ -346,6 +345,7 @@ body {
         }
 
         // ABOUT ME
+
         #about-me {
             display: flex;
             flex-direction: column;
@@ -448,7 +448,7 @@ body {
                 }
 
 
-                #responsability {
+                #responsibility {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
@@ -468,7 +468,7 @@ body {
             justify-content: space-around;
             align-content: center;
             align-items: center;
-            
+
             h1 {
                 font-weight: 700;
                 color: $gray;
@@ -567,13 +567,97 @@ body {
             }
         }
 
+    }
+
+    // PORTFOLIO CONTENT
+
+    #portfolio-content {
+
+        background: blue;
+        width: 100%;
+        height: 100%;
+
+
+        #nav-bar-portfolio {
+            background: rgba(255, 255, 255, 0.658);
+            height: 100%;
+            width: 450px;
+            right: 0px;
+            position: absolute;
+            justify-content: flex-end;
+            display: flex;
+            flex-direction: column;
+
+            h1{
+                font-weight: 700;
+                color: $black;
+                padding-bottom: 20px;
+                text-decoration: underline;
+                text-decoration-color: $blue;
+                text-decoration-style: solid;
+                position: absolute;
+                top: 100px;
+                right: 150px;
+                font-size: 30px;
+
+                
+            }
+
+            ol {
+                
+                display: flex;
+                flex-direction: column;
+                height: 500px;
 
 
 
+                li {
 
+                    display: flex;
+                    justify-content: space-between;                    border-color: #e6e6e6;
+                    border-top-style: solid;
+                    border-top-width: 0.5px;
+                    height: 100%;
+                    align-items: center;
+                    
+
+                    a {
+
+                        color: rgb(56, 56, 56);
+                        font-size: 18px;
+                        font-weight: 600;
+                        padding-left: 20px;
+                    }
+                    
+                    p {
+                        font-size: 14px;
+                        padding-right: 20px;
+                        font-weight: 500;
+                    }
+
+                }
+
+                li:hover{
+                    background: $white;
+                    
+
+                    a{
+                        font-weight: bold;
+                    }
+                    
+                }
+            }
+
+            
+
+        }
 
 
     }
+
+
+
+
 
 
 
