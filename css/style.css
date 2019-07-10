@@ -1,4 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100");
+@import url("https://fonts.googleapis.com/css?family=Poppins:100i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300");
+@import url("https://fonts.googleapis.com/css?family=Poppins:300i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:500");
+@import url("https://fonts.googleapis.com/css?family=Poppins:500i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600");
+@import url("https://fonts.googleapis.com/css?family=Poppins:600i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:700");
+@import url("https://fonts.googleapis.com/css?family=Poppins:700i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:800");
+@import url("https://fonts.googleapis.com/css?family=Poppins:800i");
+@import url("https://fonts.googleapis.com/css?family=Poppins:900");
+@import url("https://fonts.googleapis.com/css?family=Poppins:900i");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -30,6 +48,7 @@ body {
   display: flex;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 body #header-nav {
@@ -40,6 +59,7 @@ body #header-nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: #FFFFFF;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -51,23 +71,67 @@ body #header-nav {
   height: 100%;
   width: 350px;
   position: relative;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+body #header-nav.open {
+  margin-left: 0px;
+}
+
+body #header-nav.open #hide-button #close-eye {
+  opacity: 0;
+}
+
+body #header-nav.open #hide-button #open-eye {
+  opacity: 1;
+}
+
+body #header-nav.close {
+  margin-left: -350px;
+}
+
+body #header-nav.close #hide-button {
+  right: -50px;
+  background: #EFC1AC;
+}
+
+body #header-nav.close #hide-button #open-eye {
+  opacity: 0;
+}
+
+body #header-nav.close #hide-button #close-eye {
+  opacity: 1;
 }
 
 body #header-nav #hide-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 0px;
+  right: 0px;
+  width: 50px;
+  height: 50px;
 }
 
 body #header-nav #hide-button img {
+  position: absolute;
   height: 20px;
   width: 20px;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-delay: 0.15s;
+          transition-delay: 0.15s;
 }
 
 body #header-nav #name {
@@ -94,7 +158,7 @@ body #header-nav #name img {
 }
 
 body #header-nav #name h1 {
-  font-weight: 900;
+  font-weight: 700;
   color: #000000;
 }
 
@@ -194,6 +258,8 @@ body #content {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  height: 100%;
+  overflow-y: auto;
 }
 
 body #content #home {
@@ -252,6 +318,7 @@ body #content #home #home-content #home-text h2 {
 
 body #content #home #home-content #home-text h1 {
   font-size: 70px;
+  font-weight: 700;
 }
 
 body #content #home #home-content #home-text p {
@@ -304,5 +371,171 @@ body #content #home #home-content .button:hover span {
 body #content #home #home-content .button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+body #content #about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+  height: 1000px;
+}
+
+body #content #about-me h1 {
+  font-weight: 700;
+  color: #4D4D4D;
+  padding-bottom: 20px;
+}
+
+body #content #about-me #about-me-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+body #content #about-me #about-me-content img {
+  height: 450px;
+}
+
+body #content #about-me #about-me-content #about-me-text {
+  width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 180px;
+}
+
+body #content #about-me #about-me-content #about-me-text h2 {
+  font-size: 20px;
+  color: #4D4D4D;
+}
+
+body #content #about-me #four-areas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+}
+
+body #content #about-me #four-areas img {
+  width: 70px;
+}
+
+body #content #about-me #four-areas h2 {
+  font-size: 20px;
+  color: #4D4D4D;
+  padding-bottom: 10px;
+}
+
+body #content #about-me #four-areas p {
+  font-size: 12px;
+}
+
+body #content #about-me #four-areas div {
+  width: 200px;
+}
+
+body #content #about-me #four-areas #leadership {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #content #about-me #four-areas #communication {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #content #about-me #four-areas #creative-thinking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #content #about-me #four-areas #responsability {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

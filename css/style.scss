@@ -1,4 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:500');
+@import url('https://fonts.googleapis.com/css?family=Poppins:500i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:600');
+@import url('https://fonts.googleapis.com/css?family=Poppins:600i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+@import url('https://fonts.googleapis.com/css?family=Poppins:700i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:800');
+@import url('https://fonts.googleapis.com/css?family=Poppins:800i');
+@import url('https://fonts.googleapis.com/css?family=Poppins:900');
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
 $black: #000000;
 $gray: #4D4D4D;
 $pink: #EFC1AC;
@@ -30,34 +49,78 @@ body {
     display: flex;
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
 
     // GLOBAL MENU
 
     #header-nav {
         display: flex;
         flex-direction: column;
-        // background: yellow;
+        background: $white;
         justify-content: space-evenly;
         align-content: center;
         flex: 0 1 auto;
         height: 100%;
         width: 350px;
         position: relative;
+        transition-duration: 0.3s;
+
+        // HIDE MENU
+
+        &.open{
+            margin-left: 0px;
+
+            #hide-button{
+                #close-eye{
+                    opacity: 0;
+
+                }
+                #open-eye{
+                    opacity: 1;
+                }
+            }
+        }
+        &.close{
+            margin-left: -350px;
+
+            #hide-button{
+                right: -50px;
+
+                #open-eye{
+                    opacity: 0;
+                }
+                #close-eye{
+                    opacity: 1;
+                    
+                }
+
+                background: $pink;
+                
+            }
+        }
 
         // EYES BUTTON
 
         #hide-button {
             display: flex;
-            justify-content: flex-end;
-            // background: blue;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            background: white;
             position: absolute;
-            top: 10px;
-            right: 20px;
+            top: 0px;
+            right: 0px;
+            width: 50px;
+            height: 50px;
+
+
 
             img {
-
+                position:absolute;
                 height: 20px;
                 width: 20px;
+                transition-duration: 0.3s;
+                transition-delay: 0.15s;
             }
         }
 
@@ -81,7 +144,7 @@ body {
             }
 
             h1 {
-                font-weight: 900;
+                font-weight: 700;
                 color: $black;
             }
         }
@@ -169,8 +232,12 @@ body {
         }
     }
 
+   
+
     #content {
         flex: 1 1 auto;
+        height: 100%;
+        overflow-y: auto;
         
         
         // HOME
@@ -209,6 +276,7 @@ body {
 
                     h1 {
                         font-size: 70px;
+                        font-weight: 700;
                     }
 
                     p{
@@ -271,6 +339,119 @@ body {
                 
             }
         }
+
+        // ABOUT ME
+        #about-me{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-content: center;
+            align-items: center;
+            padding: 30px;
+            height: 1000px;
+
+            h1{
+                font-weight: 700;
+                color: $gray;
+                padding-bottom: 20px;
+            }
+
+            #about-me-content{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                // background: yellow;
+                width: 100%;
+
+                img{
+                    height: 450px;
+                    
+                }
+
+                #about-me-text{
+                    
+                    width: 400px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    height: 180px;
+                    
+
+                    h2{
+                        font-size: 20px;
+                        color: $gray;
+                    }
+
+                }
+                
+            }
+
+            // FOUR AREAS
+
+            #four-areas{
+                display: flex;
+                justify-content: space-evenly;
+                align-content: flex-start;
+                align-items: flex-start;
+                // background: yellow;
+                width: 100%;
+
+                img{
+                    width: 70px;
+                }
+
+                h2{
+                    font-size: 20px;
+                    color: $gray;
+                    padding-bottom: 10px;
+                }
+
+                p{
+                    font-size: 12px;
+                    
+                }
+
+                div{
+                    width: 200px;
+                }
+
+                #leadership{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-content: center;
+                    align-items: center;
+                }
+
+                #communication {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-content: center;
+                    align-items: center;
+                }
+
+                #creative-thinking {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-content: center;
+                    align-items: center;
+                }
+
+
+                #responsability {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-content: center;
+                    align-items: center;
+                }
+            }
+a
+
+        }
+
     }
 
 

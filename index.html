@@ -7,16 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Aura</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/logo-responsive-pink.png" type="image/x-icon">
+
 
 
 </head>
 
 <body>
     <header>
-        <nav id="header-nav" class="navbar navbar-default">
+
+        <!-- GLOBAL MENU -->
+        <nav id="header-nav" class="open">
 
             <div id="hide-button">
-                <img src="images/svg_Openeye.svg" alt="open">
+                <img id="open-eye" src="images/svg_Closeeye.svg" alt="open">
+                <img id="close-eye" src="images/svg_Openeye.svg" alt="close">
             </div>
 
             <div id="name">
@@ -28,7 +33,7 @@
 
             <ul id="menu">
                 <li><a href="">Home</a></li>
-                <li><a href="#AboutMe">About Me</a></li>
+                <li><a href="#about-me">About Me</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -55,7 +60,10 @@
         </nav>
     </header>
 
+
     <div id="content">
+
+        <!-- HOME -->
         <section id="home">
             <div id="home-content">
                 <div id="home-text">
@@ -68,9 +76,61 @@
                 </button>
             </div>
         </section>
+
+        <!-- ABOUT ME -->
+        <section id="about-me">
+            <h1>About Me.</h1>
+            <div id="about-me-content">
+                <img src="images/about-me.png" alt="me">
+                <div id="about-me-text">
+                    <h2>I am an Interactive Media Designer</h2>
+                    <p>With experience in the areas of User Experience Design (UX), Interface Design (UI) and web
+                        design.
+                        With leadership, ability to learn, communication and interpersonal relationships skills. I feel
+                        passionate about design. I like to analyze users context and behaviours in order to create the
+                        best
+                        solutions to every project.</p>
+                </div>
+            </div>
+            <div id="four-areas">
+                <div id="leadership">
+                    <img src="images/leader.png" alt="leadership">
+                    <h2>Leadership</h2>
+                    <p>
+                        I love to help myself and others to do the right things. To set direction, build an inspiring
+                        vision, and create something new. Leadership is about mapping out where you need to go to "win"
+                        as a team.
+                    </p>
+                </div>
+                <div id="communication">
+                    <img src="images/communication.png" alt="communication">
+                    <h2>Communication</h2>
+                    <p>
+                        Being able to communicate effectively is perhaps the most important of all life skills. It is
+                        what enables us to pass information to other people, and to understand what is said to us.
+                    </p>
+                </div>
+                <div id="creative-thinking">
+                    <img src="images/creative.png" alt="creative">
+                    <h2>Creative Thinking</h2>
+                    <p>
+                        I have the ability to devise new ways to carry out tasks, solve problems, and meet challenges. I
+                        could bring a fresh and unorthodox perspective to my work.
+                    </p>
+                </div>
+                <div id="responsability">
+                    <img src="images/responsability.png" alt="responsability">
+                    <h2>Responsibility</h2>
+                    <p>
+                        Responsibility is one of the traits of our character. I'm able to respond for my actions, and
+                        able to take some duties and to face certain consequences of the actions that may occur.
+                    </p>
+                </div>
+            </div>
+        </section>
     </div>
 
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>
