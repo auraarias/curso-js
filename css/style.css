@@ -93,7 +93,9 @@ body #header-nav.close {
 
 body #header-nav.close #hide-button {
   right: -50px;
-  background: #EFC1AC;
+  -webkit-box-shadow: 2px 2px 6px -2px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 6px -2px rgba(0, 0, 0, 0.3);
+  background: #f9e4dc;
 }
 
 body #header-nav.close #hide-button #open-eye {
@@ -396,6 +398,11 @@ body #content #about-me h1 {
   font-weight: 700;
   color: #4D4D4D;
   padding-bottom: 20px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #333372;
+          text-decoration-color: #333372;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
 }
 
 body #content #about-me #about-me-content {
@@ -537,5 +544,149 @@ body #content #about-me #four-areas #responsability {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body #content #contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #content #contact h1 {
+  font-weight: 700;
+  color: #4D4D4D;
+  padding-bottom: 20px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #333372;
+          text-decoration-color: #333372;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+}
+
+body #content #contact #contact-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 80%;
+  margin-top: 30px;
+}
+
+body #content #contact #contact-content #contact-form {
+  height: 300%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+body #content #contact #contact-content #contact-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 550px;
+  padding-left: 20px;
+  width: 80%;
+}
+
+body #content #contact #contact-content #contact-form form input,
+body #content #contact #contact-content #contact-form form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+body #content #contact #contact-content #contact-form form h2 {
+  font-size: 15px;
+  color: #4D4D4D;
+  font-weight: 600;
+}
+
+body #content #contact #contact-content #contact-form form #submit {
+  border-radius: 5px;
+  background-color: #333372;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 10px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100px;
+  height: 40px;
+}
+
+body #content #contact #contact-content #contact-form form #submit:hover {
+  font-weight: 400;
+  background-color: #FFFFFF;
+  color: #4D4D4D;
+  border: 2px solid #333372;
+}
+
+body #content #contact #contact-content #contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+}
+
+body #content #contact #contact-content #contact-info div {
+  width: 110%;
+  height: 20%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #content #contact #contact-content #contact-info img {
+  height: 40px;
 }
 /*# sourceMappingURL=style.css.map */
