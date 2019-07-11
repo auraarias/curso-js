@@ -72,6 +72,7 @@ body #header-nav {
   position: relative;
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
+  z-index: 999;
 }
 
 body #header-nav.open {
@@ -190,6 +191,14 @@ body #header-nav #menu li a {
 }
 
 body #header-nav #menu li a:hover {
+  border-right-style: solid;
+  border-right-color: #333372;
+  border-right-width: 4px;
+  font-weight: 400;
+  background: #f2f2f9;
+}
+
+body #header-nav #menu li.selected-item a {
   border-right-style: solid;
   border-right-color: #333372;
   border-right-width: 4px;
@@ -390,7 +399,7 @@ body #content #about-me {
       -ms-flex-align: center;
           align-items: center;
   padding: 30px;
-  height: 1000px;
+  height: 900px;
 }
 
 body #content #about-me h1 {
@@ -462,7 +471,7 @@ body #content #about-me #four-areas img {
 body #content #about-me #four-areas h2 {
   font-size: 20px;
   color: #4D4D4D;
-  padding-bottom: 10px;
+  padding-bottom: 7px;
 }
 
 body #content #about-me #four-areas p {
@@ -470,7 +479,7 @@ body #content #about-me #four-areas p {
 }
 
 body #content #about-me #four-areas div {
-  width: 200px;
+  width: 230px;
 }
 
 body #content #about-me #four-areas #leadership {
@@ -690,13 +699,23 @@ body #content #contact #contact-content #contact-info img {
 }
 
 body #portfolio-content {
-  background: blue;
   width: 100%;
   height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+body #portfolio-content #preview {
+  width: 110%;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-animation: zoom 6s 1 ease;
+          animation: zoom 6s 1 ease;
 }
 
 body #portfolio-content #nav-bar-portfolio {
-  background: rgba(255, 255, 255, 0.658);
+  background: rgba(255, 255, 255, 0.712);
   height: 100%;
   width: 450px;
   right: 0px;
@@ -711,6 +730,7 @@ body #portfolio-content #nav-bar-portfolio {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 9;
 }
 
 body #portfolio-content #nav-bar-portfolio h1 {
@@ -746,17 +766,28 @@ body #portfolio-content #nav-bar-portfolio ol li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border-color: #e6e6e6;
-  border-top-style: solid;
-  border-top-width: 0.5px;
-  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-color: #e2e0e0;
+  border-top-style: solid;
+  border-top-width: 0.5px;
+  height: 100%;
 }
 
 body #portfolio-content #nav-bar-portfolio ol li a {
-  color: #383838;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #333372;
   font-size: 18px;
   font-weight: 600;
   padding-left: 20px;
@@ -774,5 +805,39 @@ body #portfolio-content #nav-bar-portfolio ol li:hover {
 
 body #portfolio-content #nav-bar-portfolio ol li:hover a {
   font-weight: bold;
+}
+
+body #portfolio-content #nav-bar-portfolio ol li.selected {
+  background: #FFFFFF;
+}
+
+body #portfolio-content #nav-bar-portfolio ol li.selected a {
+  font-weight: bold;
+}
+
+body #portfolio-content #nav-bar-portfolio.open-portfolio-nav {
+  right: 0px;
+}
+
+body #portfolio-content #nav-bar-portfolio.close-portfolio-nav {
+  right: -450px;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 110%;
+  }
+}
+
+@keyframes zoom {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 110%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -17,7 +17,7 @@
     <header>
 
         <!-- GLOBAL MENU -->
-        <nav id="header-nav" class="open">
+        <nav id="header-nav" class="close">
 
             <div id="hide-button">
                 <img id="open-eye" src="images/svg_Openeye.svg" alt="open">
@@ -32,10 +32,10 @@
 
 
             <ul id="menu">
-                <li><a href="">Home</a></li>
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li id="homeBtn" class="selected-item"><a href="index.html">Home</a></li>
+                <li id="aboutBtn"><a href="index.html#about-me">About Me</a></li>
+                <li id="portfolioBtn"><a href="#">Portfolio</a></li>
+                <li id="contactBtn"><a href="index.html#contact">Contact</a></li>
             </ul>
 
 
@@ -63,34 +63,50 @@
     <!-- PORTFOLIO CONTENT -->
 
     <div id="portfolio-content">
-            <div id="nav-bar-portfolio">
+        <div id="nav-bar-portfolio" class="open-portfolio-nav">
 
-                <h1>Portfolio.</h1>
-                    <ol>
-                        <li><a href="">Gloot</a>
-                            <p>UX
-                                 Research</p>
-                        </li>
-                        <li><a href="">Jigüi</a>
-                            <p>UI & Print Design</p>
-                        </li>
-                        <li><a href="">Coffee & Friends</a>
-                            <p>UX/UI Design</p>
-                        </li>
-                        <li><a href="">BeTracks</a>
-                            <p>UX/UI Design</p>
-                        </li>
-                        <li><a href="">Banner</a>
-                            <p>UX/UI Design</p>
-                        </li>
-                        <li><a href="">Rides</a><p>UX/UI Design</p></li>
-                    </ol>
-        
-            </div>
+            <h1>Portfolio.</h1>
+            <ol>
+                <li id="gloot" class="selected">
+                    <a href="">
+                        <span>Gloot</span>
+                        <p>UX Research</p>
+                    </a>
+                </li>
+                <li id="jigui">
+                    <a href="">
+                        <span>Jigüi</span>
+                        <p>UI & Print Design</p>
+                    </a>
+                </li>
+                <li id="coffee">
+                    <a href="">
+                        <span>Coffee & Friends</span>
+                        <p>UX/UI De sign</p>
+                    </a>
+                </li>
+                <li id="betracks">
+                    <a href="">
+                        <span>BeTracks</span>
+                        <p>UX/UI Design</p>
+                    </a>
+                </li>
+                <li id="banner">
+                    <a href="">
+                        <span>Banner</span>
+                        <p>UX/UI Design</p>
+                    </a>
+                </li>
+                <li id="rides">
+                    <a href="">
+                        <span>Rides</span>
+                        <p>UX/UI Design</p>
+                    </a>
+                </li>
+            </ol>
+        </div>
 
-        <img id="gloot" src="images/gloot.jpeg" alt="gloot">
-        <h1>hola</h1>
-
+        <img id="preview" src="images/gloot.png" alt="gloot">
     </div>
 
     <script src="js/main.js"></script>

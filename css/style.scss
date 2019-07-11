@@ -63,6 +63,7 @@ body {
         width: 350px;
         position: relative;
         transition-duration: 0.3s;
+        z-index: 999;
 
         // HIDE MENU
 
@@ -157,8 +158,7 @@ body {
             border-style: solid;
             border-width: 0px 0px 0.5px 0px;
             border-bottom-color: #e6e6e6;
-
-
+            
             li {
                 height: 100%;
 
@@ -167,7 +167,6 @@ body {
                     font-size: 15px;
                     font-weight: bold;
                     padding: 18px 0px 18px 0px;
-                    // background: orangered;
                     border-color: #e6e6e6;
                     border-style: solid;
                     border-width: 0.5px 0px 0px 0px;
@@ -181,11 +180,19 @@ body {
                     border-right-width: 4px;
                     font-weight: 400;
                     background: #f2f2f9;
-
-
                 }
 
+                &.selected-item {
+                    
+                    a {
+                        border-right-style: solid;
+                        border-right-color: $blue;
+                        border-right-width: 4px;
+                        font-weight: 400;
+                        background: #f2f2f9;
+                    }
 
+                }
             }
         }
 
@@ -230,9 +237,6 @@ body {
                     }
                 }
             }
-
-
-
         }
     }
 
@@ -271,7 +275,7 @@ body {
                     justify-content: space-around;
                     align-items: center;
                     height: 150px;
-                    // background: yellow;
+                    
 
                     h2 {
                         font-size: 30px;
@@ -353,7 +357,7 @@ body {
             align-content: center;
             align-items: center;
             padding: 30px;
-            height: 1000px;
+            height: 900px;
 
             h1 {
                 font-weight: 700;
@@ -411,7 +415,7 @@ body {
                 h2 {
                     font-size: 20px;
                     color: $gray;
-                    padding-bottom: 10px;
+                    padding-bottom: 7px;
                 }
 
                 p {
@@ -420,7 +424,7 @@ body {
                 }
 
                 div {
-                    width: 200px;
+                    width: 230px;
                 }
 
                 #leadership {
@@ -468,7 +472,7 @@ body {
             justify-content: space-around;
             align-content: center;
             align-items: center;
-
+            
             h1 {
                 font-weight: 700;
                 color: $gray;
@@ -572,14 +576,23 @@ body {
     // PORTFOLIO CONTENT
 
     #portfolio-content {
-
-        background: blue;
         width: 100%;
         height: 100%;
+        position: fixed;
+        //z-index: -1;
+        top: 0;
+        left: 0;
 
+        #preview {
+            width: 110%;
+            min-width: 100%;
+            min-height: 100%;
+            animation: zoom 6s 1 ease;
+            //z-index: -1;           
+        }
 
         #nav-bar-portfolio {
-            background: rgba(255, 255, 255, 0.658);
+            background: rgba(255, 255, 255, 0.712);
             height: 100%;
             width: 450px;
             right: 0px;
@@ -587,8 +600,9 @@ body {
             justify-content: flex-end;
             display: flex;
             flex-direction: column;
+            z-index: 9;
 
-            h1{
+            h1 {
                 font-weight: 700;
                 color: $black;
                 padding-bottom: 20px;
@@ -599,59 +613,93 @@ body {
                 top: 100px;
                 right: 150px;
                 font-size: 30px;
-
-                
             }
 
             ol {
-                
                 display: flex;
                 flex-direction: column;
                 height: 500px;
 
-
-
                 li {
 
                     display: flex;
-                    justify-content: space-between;                    border-color: #e6e6e6;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-color: rgb(226, 224, 224);
                     border-top-style: solid;
                     border-top-width: 0.5px;
                     height: 100%;
-                    align-items: center;
-                    
+
 
                     a {
-
-                        color: rgb(56, 56, 56);
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;
+                        height: 100%;
+                        color: $blue;
                         font-size: 18px;
                         font-weight: 600;
                         padding-left: 20px;
                     }
-                    
+
                     p {
                         font-size: 14px;
                         padding-right: 20px;
                         font-weight: 500;
                     }
 
-                }
+                    &:hover {
+                        background: $white;
 
-                li:hover{
-                    background: $white;
-                    
 
-                    a{
-                        font-weight: bold;
+                        a {
+                            font-weight: bold;
+                        }
+
                     }
-                    
+
+                    &.selected {
+                        background: $white;
+
+                        a {
+                            font-weight: bold;
+                        }
+
+                    }
+
                 }
+
+
             }
 
-            
+            &.open-portfolio-nav {
+
+                right: 0px;
+            }
+
+            &.close-portfolio-nav {
+
+                right: -450px;
+            }
+
+
 
         }
 
+
+    }
+
+    // ANIMACIONES
+
+    @keyframes zoom {
+        from {
+            width: 100%;
+        }
+
+        to {
+            width: 110%;
+        }
 
     }
 
