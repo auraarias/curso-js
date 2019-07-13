@@ -877,9 +877,25 @@ body #gloot-content h2 {
 
 body #gloot-content #gloot-name {
   width: 100%;
+  height: 160px;
   border-color: #e2e0e0;
   border-bottom-style: solid;
   border-bottom-width: 0.5px;
+}
+
+body #gloot-content #gloot-name #gloot-year {
+  width: 93%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #gloot-content #gloot-name #gloot-year h4 {
+  padding: 10px;
+  color: #4D4D4D;
 }
 
 body #gloot-content #gloot-name img {
@@ -953,7 +969,7 @@ body #gloot-content #gloot-ui #gloot-ui-content {
 }
 
 body #gloot-content #gloot-ui #gloot-ui-content img {
-  width: 300px;
+  width: 350px;
 }
 
 body #gloot-content #gloot-ui #gloot-concept-art {
@@ -974,7 +990,7 @@ body #gloot-content #gloot-ui #gloot-concept-art img {
   width: 450px;
 }
 
-body #gloot-content #gloot-ui img {
+body #gloot-content #gloot-ui #gloot-mockup {
   padding-top: 20px;
   width: 100%;
 }
@@ -1029,94 +1045,57 @@ body #betracks-content h2 {
   color: #4D4D4D;
   padding-top: 30px;
   text-decoration: underline;
-  -webkit-text-decoration-color: #7f1200;
-          text-decoration-color: #7f1200;
+  -webkit-text-decoration-color: #8ac0be;
+          text-decoration-color: #8ac0be;
   -webkit-text-decoration-style: solid;
           text-decoration-style: solid;
 }
 
 body #betracks-content #betracks-name {
+  background: #333372;
   width: 100%;
+  height: 160px;
   border-color: #e2e0e0;
   border-bottom-style: solid;
   border-bottom-width: 0.5px;
 }
 
-body #betracks-content #betracks-name img {
-  width: 300px;
+body #betracks-content #betracks-name #betracks-year {
+  width: 93%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-body #betracks-content #gloot-problem {
+body #betracks-content #betracks-name #betracks-year h4 {
+  padding: 10px;
+  color: #FFFFFF;
+}
+
+body #betracks-content #betracks-name img {
+  width: 100px;
+  padding-bottom: 20px;
+}
+
+body #betracks-content #betracks-problem {
   width: 100%;
   height: 150px;
 }
 
-body #betracks-content #gloot-problem p {
+body #betracks-content #betracks-problem p {
   width: 400px;
   text-align: center;
 }
 
-body #betracks-content #gloot-ux {
+body #betracks-content #betracks-ux {
   width: 100%;
 }
 
-body #betracks-content #gloot-ux #gloot-ux-content {
+body #betracks-content #betracks-ux #betracks-ux-content {
   width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-body #betracks-content #gloot-ux #gloot-ux-content ul {
-  list-style: none;
-  border: 2px #ed6203 solid;
-  border-radius: 5px;
-  padding: 10px;
-}
-
-body #betracks-content #gloot-ux #gloot-ux-content img {
-  width: 650px;
-}
-
-body #betracks-content #gloot-solution {
-  width: 100%;
-  height: 200px;
-}
-
-body #betracks-content #gloot-solution p {
-  width: 700px;
-  text-align: center;
-}
-
-body #betracks-content #gloot-ui {
-  width: 100%;
-}
-
-body #betracks-content #gloot-ui #gloot-ui-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-body #betracks-content #gloot-ui #gloot-ui-content img {
-  width: 300px;
-}
-
-body #betracks-content #gloot-ui #gloot-concept-art {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1130,16 +1109,195 @@ body #betracks-content #gloot-ui #gloot-concept-art {
           justify-content: space-evenly;
 }
 
-body #betracks-content #gloot-ui #gloot-concept-art img {
-  width: 450px;
+body #betracks-content #betracks-ux #betracks-ux-content #ux {
+  width: 300px;
 }
 
-body #betracks-content #gloot-ui img {
-  padding-top: 20px;
+body #betracks-content #betracks-ux #betracks-ux-content #ux-image {
+  width: 500px;
+  padding-top: 30px;
+}
+
+body #betracks-content #betracks-solution {
+  width: 100%;
+  height: 200px;
+}
+
+body #betracks-content #betracks-solution p {
+  width: 500px;
+  text-align: center;
+}
+
+body #betracks-content #betracks-ui {
   width: 100%;
 }
 
-body #betracks-content #gloot-ui h2 {
+body #betracks-content #betracks-ui #betracks-ui-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body #betracks-content #betracks-ui #betracks-ui-content img {
+  width: 400px;
+}
+
+body #betracks-content #betracks-ui #betracks-wireframes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body #betracks-content #betracks-ui #betracks-wireframes img {
+  width: 75%;
+}
+
+body #betracks-content #betracks-ui #betracks-mockup {
+  padding-top: 20px;
+  height: 700px;
+}
+
+body #betracks-content #betracks-ui h2 {
+  padding-bottom: 30px;
+}
+
+body #banner-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+body #banner-content section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+body #banner-content h2 {
+  font-weight: 700;
+  color: #4D4D4D;
+  padding-top: 30px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #9ebd57;
+          text-decoration-color: #9ebd57;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+}
+
+body #banner-content #banner-name {
+  width: 100%;
+  height: 160px;
+  border-color: #e2e0e0;
+  border-bottom-style: solid;
+  border-bottom-width: 0.5px;
+}
+
+body #banner-content #banner-name #banner-year {
+  width: 93%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #banner-content #banner-name #banner-year h4 {
+  padding: 10px;
+  color: #000000;
+}
+
+body #banner-content #banner-name img {
+  width: 300px;
+  padding-bottom: 20px;
+}
+
+body #banner-content #banner-problem {
+  width: 100%;
+  height: 150px;
+}
+
+body #banner-content #banner-problem p {
+  width: 400px;
+  text-align: center;
+}
+
+body #banner-content #banner-ui {
+  width: 100%;
+}
+
+body #banner-content #banner-ui #banner-ui-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body #banner-content #banner-ui #banner-ui-content img {
+  width: 400px;
+}
+
+body #banner-content #banner-ui #banner-screen {
+  padding-top: 20px;
+  height: 600px;
+}
+
+body #banner-content #banner-ui #banner-mockup {
+  padding-top: 20px;
+  width: 900px;
+}
+
+body #banner-content #banner-ui h2 {
   padding-bottom: 30px;
 }
 
