@@ -114,7 +114,7 @@ coffee.addEventListener("mouseover", () => {
     }
 });
 
-let homeBtn = document.querySelector("#prueba");
+let homeBtn = document.querySelector("#homeBtn");
 let aboutBtn = document.querySelector("#aboutBtn");
 let portfolioBtn = document.querySelector("#portfolioBtn");
 let contactBtn = document.querySelector("#contactBtn");

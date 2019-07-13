@@ -398,14 +398,14 @@ body #content #about-me {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 30px;
-  height: 900px;
+  padding: 10px;
+  height: 1000px;
 }
 
 body #content #about-me h1 {
   font-weight: 700;
   color: #4D4D4D;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   text-decoration: underline;
   -webkit-text-decoration-color: #333372;
           text-decoration-color: #333372;
@@ -710,8 +710,8 @@ body #portfolio-content #preview {
   width: 110%;
   min-width: 100%;
   min-height: 100%;
-  -webkit-animation: zoom 6s 1 ease;
-          animation: zoom 6s 1 ease;
+  -webkit-animation: zoom 4s 1 ease;
+          animation: zoom 4s 1 ease;
 }
 
 body #portfolio-content #nav-bar-portfolio {
@@ -821,6 +821,326 @@ body #portfolio-content #nav-bar-portfolio.open-portfolio-nav {
 
 body #portfolio-content #nav-bar-portfolio.close-portfolio-nav {
   right: -450px;
+}
+
+body #gloot-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+body #gloot-content section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+body #gloot-content h2 {
+  font-weight: 700;
+  color: #4D4D4D;
+  padding-top: 30px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #7f1200;
+          text-decoration-color: #7f1200;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+}
+
+body #gloot-content #gloot-name {
+  width: 100%;
+  border-color: #e2e0e0;
+  border-bottom-style: solid;
+  border-bottom-width: 0.5px;
+}
+
+body #gloot-content #gloot-name img {
+  width: 300px;
+}
+
+body #gloot-content #gloot-problem {
+  width: 100%;
+  height: 150px;
+}
+
+body #gloot-content #gloot-problem p {
+  width: 400px;
+  text-align: center;
+}
+
+body #gloot-content #gloot-ux {
+  width: 100%;
+}
+
+body #gloot-content #gloot-ux #gloot-ux-content {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body #gloot-content #gloot-ux #gloot-ux-content ul {
+  list-style: none;
+  border: 2px #ed6203 solid;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+body #gloot-content #gloot-ux #gloot-ux-content img {
+  width: 650px;
+}
+
+body #gloot-content #gloot-solution {
+  width: 100%;
+  height: 200px;
+}
+
+body #gloot-content #gloot-solution p {
+  width: 700px;
+  text-align: center;
+}
+
+body #gloot-content #gloot-ui {
+  width: 100%;
+}
+
+body #gloot-content #gloot-ui #gloot-ui-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body #gloot-content #gloot-ui #gloot-ui-content img {
+  width: 300px;
+}
+
+body #gloot-content #gloot-ui #gloot-concept-art {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body #gloot-content #gloot-ui #gloot-concept-art img {
+  width: 450px;
+}
+
+body #gloot-content #gloot-ui img {
+  padding-top: 20px;
+  width: 100%;
+}
+
+body #gloot-content #gloot-ui h2 {
+  padding-bottom: 30px;
+}
+
+body #betracks-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+
+body #betracks-content section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+body #betracks-content h2 {
+  font-weight: 700;
+  color: #4D4D4D;
+  padding-top: 30px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #7f1200;
+          text-decoration-color: #7f1200;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+}
+
+body #betracks-content #betracks-name {
+  width: 100%;
+  border-color: #e2e0e0;
+  border-bottom-style: solid;
+  border-bottom-width: 0.5px;
+}
+
+body #betracks-content #betracks-name img {
+  width: 300px;
+}
+
+body #betracks-content #gloot-problem {
+  width: 100%;
+  height: 150px;
+}
+
+body #betracks-content #gloot-problem p {
+  width: 400px;
+  text-align: center;
+}
+
+body #betracks-content #gloot-ux {
+  width: 100%;
+}
+
+body #betracks-content #gloot-ux #gloot-ux-content {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body #betracks-content #gloot-ux #gloot-ux-content ul {
+  list-style: none;
+  border: 2px #ed6203 solid;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+body #betracks-content #gloot-ux #gloot-ux-content img {
+  width: 650px;
+}
+
+body #betracks-content #gloot-solution {
+  width: 100%;
+  height: 200px;
+}
+
+body #betracks-content #gloot-solution p {
+  width: 700px;
+  text-align: center;
+}
+
+body #betracks-content #gloot-ui {
+  width: 100%;
+}
+
+body #betracks-content #gloot-ui #gloot-ui-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+body #betracks-content #gloot-ui #gloot-ui-content img {
+  width: 300px;
+}
+
+body #betracks-content #gloot-ui #gloot-concept-art {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+body #betracks-content #gloot-ui #gloot-concept-art img {
+  width: 450px;
+}
+
+body #betracks-content #gloot-ui img {
+  padding-top: 20px;
+  width: 100%;
+}
+
+body #betracks-content #gloot-ui h2 {
+  padding-bottom: 30px;
 }
 
 @-webkit-keyframes zoom {
