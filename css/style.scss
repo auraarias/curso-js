@@ -731,12 +731,12 @@ body {
             border-bottom-style: solid;
             border-bottom-width: 0.5px;
 
-            #gloot-year{
+            #gloot-year {
                 width: 93%;
                 display: flex;
                 justify-content: space-between;
-                
-                h4{
+
+                h4 {
                     padding: 10px;
                     color: $gray;
                 }
@@ -802,43 +802,194 @@ body {
 
         // GLOOT UI
 
-        #gloot-ui{
+        #gloot-ui {
             width: 100%;
             // background: blue;
 
-            #gloot-ui-content{
+            #gloot-ui-content {
                 // background: blue;
                 display: flex;
                 align-content: center;
                 align-items: center;
                 justify-content: space-around;
 
-                img{
+                img {
                     width: 350px;
                     // background: yellow;
                 }
             }
 
-            #gloot-concept-art{
-                    // background: blue;
-                    display: flex;
-                    align-content: center;
-                    align-items: center;
-                    justify-content: space-evenly;
-                    
-                    img{
-                        width: 450px;
-                    }
+            #gloot-concept-art {
+                // background: blue;
+                display: flex;
+                align-content: center;
+                align-items: center;
+                justify-content: space-evenly;
+
+                img {
+                    width: 450px;
+                }
             }
 
-            #gloot-mockup{
+            #gloot-mockup {
                 padding-top: 20px;
                 width: 100%;
             }
 
-            h2{
+            h2 {
                 padding-bottom: 30px;
             }
+        }
+
+        //BUTTON
+        #glootBtn {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            width: 100%;
+            border-color: rgb(226, 224, 224);
+            border-top-style: solid;
+            border-top-width: 0.5px;
+            min-height: 170px;
+
+
+            //BTN RIGHT
+
+            .buttonR {
+                border-radius: 5px;
+                background-color: $blueish;
+                border: solid;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 18px;
+                padding: 10px;
+                width: 250px;
+                height: 50px;
+                transition: all 0.5s;
+                cursor: pointer;
+
+            }
+
+            .buttonR span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .buttonR span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+
+            }
+
+            .buttonR:hover {
+                background: $blue;
+                font-weight: 400;
+                border: none;
+
+            }
+
+            .buttonR:hover span {
+                padding-right: 25px;
+
+            }
+
+            .buttonR:hover span:after {
+                opacity: 1;
+                right: 0;
+
+            }
+
+            //BTN LEFT
+
+            .buttonL {
+                border-radius: 5px;
+                background-color: $blueish;
+                border: solid;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 18px;
+                padding: 10px;
+                width: 250px;
+                height: 50px;
+                transition: all 0.5s;
+                cursor: pointer;
+
+            }
+
+            .buttonL span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .buttonL span:after {
+                content: '\00ab';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                left: 20px;
+                transition: 0.5s;
+
+            }
+
+            .buttonL:hover {
+                background: $blue;
+                font-weight: 400;
+                border: none;
+
+            }
+
+            .buttonL:hover span {
+                padding-left: 25px;
+
+            }
+
+            .buttonL:hover span:after {
+                opacity: 1;
+                left: 0;
+
+            }
+
+            //BEHANCE BTN
+
+            a {
+
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+
+                img {
+                    height: 16px;
+                    transition-duration: 0.5s;
+                }
+
+                &:hover {
+                    background: $pink;
+
+                    a {
+                        img {
+                            height: 18px;
+                            filter: brightness(1000%);
+                        }
+                    }
+                }
+
+            }
+
+
+
         }
     }
 
@@ -872,7 +1023,7 @@ body {
             text-decoration: underline;
             text-decoration-color: #8ac0be;
             text-decoration-style: solid;
-        } 
+        }
 
         // BETRACKS LOGO
 
@@ -884,12 +1035,12 @@ body {
             border-bottom-style: solid;
             border-bottom-width: 0.5px;
 
-            #betracks-year{
+            #betracks-year {
                 width: 93%;
                 display: flex;
                 justify-content: space-between;
-                
-                h4{
+
+                h4 {
                     padding: 10px;
                     color: $white;
                 }
@@ -928,11 +1079,11 @@ body {
                 justify-content: space-evenly;
                 // background: blue;
 
-                #ux{
+                #ux {
                     width: 300px;
                 }
 
-                #ux-image{
+                #ux-image {
                     width: 500px;
                     padding-top: 30px;
                 }
@@ -944,7 +1095,7 @@ body {
         #betracks-solution {
             width: 100%;
             height: 200px;
-            
+
             p {
                 width: 500px;
                 text-align: center;
@@ -953,42 +1104,190 @@ body {
 
         // BETRACKS UI
 
-        #betracks-ui{
+        #betracks-ui {
             width: 100%;
             // background: blue;
 
-            #betracks-ui-content{
+            #betracks-ui-content {
                 // background: blue;
                 display: flex;
                 align-content: center;
                 align-items: center;
                 justify-content: space-around;
 
-                img{
+                img {
                     width: 400px;
                     // background: yellow;
                 }
             }
 
-            #betracks-wireframes{
-                    // background: blue;
-                    display: flex;
-                    align-content: center;
-                    align-items: center;
-                    justify-content: center;
-                    
-                    img{
-                        width: 75%;
-                    }
+            #betracks-wireframes {
+                // background: blue;
+                display: flex;
+                align-content: center;
+                align-items: center;
+                justify-content: center;
+
+                img {
+                    width: 75%;
+                }
             }
 
-            #betracks-mockup{
+            #betracks-mockup {
                 padding-top: 20px;
                 height: 700px;
             }
 
-            h2{
+            h2 {
                 padding-bottom: 30px;
+            }
+        }
+
+        //BUTTON
+        #betracksBtn {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            width: 100%;
+            border-color: rgb(226, 224, 224);
+            border-top-style: solid;
+            border-top-width: 0.5px;
+            min-height: 170px;
+
+
+            //BTN RIGHT
+
+            .buttonR {
+                border-radius: 5px;
+                background-color: $blueish;
+                border: solid;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 18px;
+                padding: 10px;
+                width: 250px;
+                height: 50px;
+                transition: all 0.5s;
+                cursor: pointer;
+
+            }
+
+            .buttonR span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .buttonR span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+
+            }
+
+            .buttonR:hover {
+                background: $blue;
+                font-weight: 400;
+                border: none;
+
+            }
+
+            .buttonR:hover span {
+                padding-right: 25px;
+
+            }
+
+            .buttonR:hover span:after {
+                opacity: 1;
+                right: 0;
+
+            }
+
+            //BTN LEFT
+
+            .buttonL {
+                border-radius: 5px;
+                background-color: $blueish;
+                border: solid;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 18px;
+                padding: 10px;
+                width: 250px;
+                height: 50px;
+                transition: all 0.5s;
+                cursor: pointer;
+
+            }
+
+            .buttonL span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .buttonL span:after {
+                content: '\00ab';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                left: 20px;
+                transition: 0.5s;
+
+            }
+
+            .buttonL:hover {
+                background: $blue;
+                font-weight: 400;
+                border: none;
+
+            }
+
+            .buttonL:hover span {
+                padding-left: 25px;
+
+            }
+
+            .buttonL:hover span:after {
+                opacity: 1;
+                left: 0;
+
+            }
+
+            //BEHANCE BTN
+
+            a {
+
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+
+                img {
+                    height: 16px;
+                    transition-duration: 0.5s;
+                }
+
+                &:hover {
+                    background: $pink;
+
+                    a {
+                        img {
+                            height: 18px;
+                            filter: brightness(1000%);
+                        }
+                    }
+                }
+
             }
         }
     }
@@ -1023,7 +1322,7 @@ body {
             text-decoration: underline;
             text-decoration-color: #9ebd57;
             text-decoration-style: solid;
-        } 
+        }
 
         // BANNER LOGO
 
@@ -1034,12 +1333,12 @@ body {
             border-bottom-style: solid;
             border-bottom-width: 0.5px;
 
-            #banner-year{
+            #banner-year {
                 width: 93%;
                 display: flex;
                 justify-content: space-between;
-                
-                h4{
+
+                h4 {
                     padding: 10px;
                     color: $black;
                 }
@@ -1063,46 +1362,1054 @@ body {
                 text-align: center;
             }
         }
-        
+
         // BANNER UI
 
-        #banner-ui{
+        #banner-ui {
             width: 100%;
             // background: blue;
 
-            #banner-ui-content{
+            #banner-ui-content {
                 // background: blue;
                 display: flex;
                 align-content: center;
                 align-items: center;
                 justify-content: space-around;
 
-                img{
+                img {
                     width: 400px;
                     // background: yellow;
                 }
             }
 
-            #banner-screen{
+            #banner-screen {
                 padding-top: 20px;
                 height: 600px;
             }
 
-            #banner-mockup{
+            #banner-mockup {
                 padding-top: 20px;
                 width: 900px;
             }
 
-            h2{
+            h2 {
                 padding-bottom: 30px;
             }
         }
+
+        //BUTTON
+        #bannerBtn {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 40px;
+            width: 100%;
+            border-color: rgb(226, 224, 224);
+            border-top-style: solid;
+            border-top-width: 0.5px;
+            min-height: 170px;
+
+
+            //BTN RIGHT
+
+            .buttonR {
+                border-radius: 5px;
+                background-color: $blueish;
+                border: solid;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 18px;
+                padding: 10px;
+                width: 250px;
+                height: 50px;
+                transition: all 0.5s;
+                cursor: pointer;
+
+            }
+
+            .buttonR span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .buttonR span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+
+            }
+
+            .buttonR:hover {
+                background: $blue;
+                font-weight: 400;
+                border: none;
+
+            }
+
+            .buttonR:hover span {
+                padding-right: 25px;
+
+            }
+
+            .buttonR:hover span:after {
+                opacity: 1;
+                right: 0;
+
+            }
+
+            //BTN LEFT
+
+            .buttonL {
+                border-radius: 5px;
+                background-color: $blueish;
+                border: solid;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 18px;
+                padding: 10px;
+                width: 250px;
+                height: 50px;
+                transition: all 0.5s;
+                cursor: pointer;
+
+            }
+
+            .buttonL span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .buttonL span:after {
+                content: '\00ab';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                left: 20px;
+                transition: 0.5s;
+
+            }
+
+            .buttonL:hover {
+                background: $blue;
+                font-weight: 400;
+                border: none;
+
+            }
+
+            .buttonL:hover span {
+                padding-left: 25px;
+
+            }
+
+            .buttonL:hover span:after {
+                opacity: 1;
+                left: 0;
+
+            }
+
+            //BEHANCE BTN
+
+            a {
+
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+
+                img {
+                    height: 16px;
+                    transition-duration: 0.5s;
+                }
+
+                &:hover {
+                    background: $pink;
+
+                    a {
+                        img {
+                            height: 18px;
+                            filter: brightness(1000%);
+                        }
+                    }
+                }
+
+            }
+
+
+
+        }
     }
 
-    
+    // RIDES CONTENT
 
-    
+    #rides-content {
 
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        // background: red;
+
+        section {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        h2 {
+            font-weight: 700;
+            color: $gray;
+            padding-top: 30px;
+            text-decoration: underline;
+            text-decoration-color: #80c7c1;
+            text-decoration-style: solid;
+        }
+
+        // RIDES LOGO
+
+        #rides-name {
+            background: #80c7c1;
+            width: 100%;
+            height: 160px;
+            border-color: rgb(226, 224, 224);
+            border-bottom-style: solid;
+            border-bottom-width: 0.5px;
+
+            #rides-year {
+                width: 93%;
+                display: flex;
+                justify-content: space-between;
+
+                h4 {
+                    padding: 10px;
+                    color: $gray;
+                }
+            }
+
+            img {
+                width: 300px;
+            }
+        }
+
+        //RIDES INTRO
+
+        #rides-intro {
+
+            #rides-intro-content {
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                width: 80%;
+                padding-top: 20px;
+
+                #trus-equation {
+                    width: 300px;
+
+                    h3 {
+                        color: $gray;
+                    }
+                }
+
+                #trust {
+                    width: 500px;
+                    border: 2px #80c7c1 solid;
+                    border-radius: 5px;
+                    padding: 10px;
+                }
+
+            }
+        }
+
+
+        // RIDES PROBLEM
+
+        #rides-problem {
+            // background: aqua;
+            width: 100%;
+            height: 200px;
+
+            p {
+                width: 600px;
+                text-align: center;
+            }
+        }
+
+        // RIDES UX
+        #rides-ux {
+
+            #invest {
+                width: 850px;
+                margin-top: 20px,
+            }
+        }
+
+
+        // RIDES SOLUTION
+
+        #rides-solution {
+            width: 100%;
+            height: 200px;
+
+
+            p {
+                width: 700px;
+                text-align: center;
+            }
+        }
+
+        // RIDES UI
+
+        #rides-ui {
+            width: 100%;
+            // background: blue;
+
+            #rides-ui-content {
+                // background: blue;
+                display: flex;
+                align-content: center;
+                align-items: center;
+                justify-content: space-around;
+
+                img {
+                    width: 350px;
+                    // background: yellow;
+                }
+            }
+
+            #rides-wireframes {
+                width: 60%;
+            }
+
+            #rides-results {
+                width: 60%;
+            }
+
+            #rides-screen {
+                width: 90%;
+            }
+        }
+
+        //BUTTON
+        #ridesBtn {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            padding: 40px;
+            width: 100%;
+            border-color: rgb(226, 224, 224);
+            border-top-style: solid;
+            border-top-width: 0.5px;
+            min-height: 170px;
+
+
+            //BTN RIGHT
+
+            .buttonR {
+                border-radius: 5px;
+                background-color: $blueish;
+                border: solid;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 18px;
+                padding: 10px;
+                width: 250px;
+                height: 50px;
+                transition: all 0.5s;
+                cursor: pointer;
+
+            }
+
+            .buttonR span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .buttonR span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+
+            }
+
+            .buttonR:hover {
+                background: $blue;
+                font-weight: 400;
+                border: none;
+
+            }
+
+            .buttonR:hover span {
+                padding-right: 25px;
+
+            }
+
+            .buttonR:hover span:after {
+                opacity: 1;
+                right: 0;
+
+            }
+
+            //BTN LEFT
+
+            .buttonL {
+                border-radius: 5px;
+                background-color: $blueish;
+                border: solid;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 18px;
+                padding: 10px;
+                width: 250px;
+                height: 50px;
+                transition: all 0.5s;
+                cursor: pointer;
+
+            }
+
+            .buttonL span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .buttonL span:after {
+                content: '\00ab';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                left: 20px;
+                transition: 0.5s;
+
+            }
+
+            .buttonL:hover {
+                background: $blue;
+                font-weight: 400;
+                border: none;
+
+            }
+
+            .buttonL:hover span {
+                padding-left: 25px;
+
+            }
+
+            .buttonL:hover span:after {
+                opacity: 1;
+                left: 0;
+
+            }
+
+            //BEHANCE BTN
+
+            a {
+
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+
+                img {
+                    height: 16px;
+                    transition-duration: 0.5s;
+                }
+
+                &:hover {
+                    background: $pink;
+
+                    a {
+                        img {
+                            height: 18px;
+                            filter: brightness(1000%);
+                        }
+                    }
+                }
+
+            }
+
+
+
+        }
+    }
+
+    // COFFEE CONTENT
+
+    #coffee-content {
+
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        // background: red;
+
+        section {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        h2 {
+            font-weight: 700;
+            color: $gray;
+            padding-top: 30px;
+            text-decoration: underline;
+            text-decoration-color: #E08C4C;
+            text-decoration-style: solid;
+        }
+
+        // COFFEE LOGO
+
+        #coffee-name {
+            width: 100%;
+            height: 160px;
+            border-color: rgb(226, 224, 224);
+            border-bottom-style: solid;
+            border-bottom-width: 0.5px;
+
+            #coffee-year {
+                width: 93%;
+                display: flex;
+                justify-content: space-between;
+
+                h4 {
+                    padding: 10px;
+                    color: $gray;
+                }
+            }
+
+            img {
+                width: 200px;
+                padding-bottom: 20px;
+            }
+        }
+
+        // COFFEE PROBLEM
+
+        #coffee-problem {
+            // background: aqua;
+            width: 100%;
+            height: 140px;
+
+            p {
+                width: 400px;
+                text-align: center;
+            }
+        }
+
+        // COFFEE UX
+        #coffee-ux {
+
+            height: 190px;
+
+            p {
+                text-align: center;
+                width: 700px;
+            }
+        }
+
+
+        // COFFEE SOLUTION
+
+        #coffee-solution {
+            width: 100%;
+            height: 120px;
+
+
+            p {
+                width: 700px;
+                text-align: center;
+            }
+        }
+
+        // COFFEE UI
+        #coffee-ui {
+            width: 100%;
+            // background: blue;
+
+            #coffee-ui-content {
+                // background: blue;
+                display: flex;
+                align-content: center;
+                align-items: center;
+                justify-content: space-around;
+
+                img {
+                    width: 300px;
+                    // background: yellow;
+                }
+            }
+
+            #coffee-mockup {
+                width: 50%;
+            }
+
+        }
+
+        //BUTTON
+        #coffeeBtn {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            padding: 40px;
+            width: 100%;
+            border-color: rgb(226, 224, 224);
+            border-top-style: solid;
+            border-top-width: 0.5px;
+            min-height: 170px;
+
+
+            //BTN RIGHT
+
+            .buttonR {
+                border-radius: 5px;
+                background-color: $blueish;
+                border: solid;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 18px;
+                padding: 10px;
+                width: 250px;
+                height: 50px;
+                transition: all 0.5s;
+                cursor: pointer;
+
+            }
+
+            .buttonR span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .buttonR span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+
+            }
+
+            .buttonR:hover {
+                background: $blue;
+                font-weight: 400;
+                border: none;
+
+            }
+
+            .buttonR:hover span {
+                padding-right: 25px;
+
+            }
+
+            .buttonR:hover span:after {
+                opacity: 1;
+                right: 0;
+
+            }
+
+            //BTN LEFT
+
+            .buttonL {
+                border-radius: 5px;
+                background-color: $blueish;
+                border: solid;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 18px;
+                padding: 10px;
+                width: 250px;
+                height: 50px;
+                transition: all 0.5s;
+                cursor: pointer;
+
+            }
+
+            .buttonL span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .buttonL span:after {
+                content: '\00ab';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                left: 20px;
+                transition: 0.5s;
+
+            }
+
+            .buttonL:hover {
+                background: $blue;
+                font-weight: 400;
+                border: none;
+
+            }
+
+            .buttonL:hover span {
+                padding-left: 25px;
+
+            }
+
+            .buttonL:hover span:after {
+                opacity: 1;
+                left: 0;
+
+            }
+
+            //BEHANCE BTN
+
+            a {
+
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+
+                img {
+                    height: 16px;
+                    transition-duration: 0.5s;
+                }
+
+                &:hover {
+                    background: $pink;
+
+                    a {
+                        img {
+                            height: 18px;
+                            filter: brightness(1000%);
+                        }
+                    }
+                }
+
+            }
+
+
+
+        }
+    }
+
+    // JIGUI CONTENT
+
+    #jigui-content {
+
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        // background: red;
+
+        section {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-content: center;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        h2 {
+            font-weight: 700;
+            color: $gray;
+            padding-top: 30px;
+            text-decoration: underline;
+            text-decoration-color: #FFEC9C;
+            text-decoration-style: solid;
+        }
+
+        // JIGUI LOGO
+
+        #jigui-name {
+            width: 100%;
+            height: 160px;
+            border-color: rgb(226, 224, 224);
+            border-bottom-style: solid;
+            border-bottom-width: 0.5px;
+
+            #jigui-year {
+                width: 93%;
+                display: flex;
+                justify-content: space-between;
+
+                h4 {
+                    padding: 10px;
+                    color: $gray;
+                }
+            }
+
+            img {
+                width: 130px;
+                padding-bottom: 10px;
+            }
+        }
+
+        // JIGUI PROBLEM
+
+        #jigui-problem {
+            // background: aqua;
+            width: 100%;
+            height: 140px;
+
+            p {
+                width: 400px;
+                text-align: center;
+            }
+        }
+
+        // JIGUI SOLUTION
+
+        #jigui-solution {
+            width: 100%;
+            height: 140px;
+
+
+            p {
+                width: 700px;
+                text-align: center;
+            }
+        }
+
+        // JIGUI UI
+        #jigui-ui {
+            width: 100%;
+            // background: blue;
+
+            #jigui-ui-content {
+                // background: blue;
+                display: flex;
+                align-content: center;
+                align-items: center;
+                justify-content: space-around;
+
+                img {
+                    width: 300px;
+                    // background: yellow;
+                }
+            }
+
+
+            #jigui-concept {
+                width: 500px;
+            }
+
+            #jigui-web{
+                width: 900px;
+            }
+
+            #jigui-paper{
+                width: 100%;
+                padding-top: 20px;
+                
+            }
+
+        }
+
+        //BUTTON
+        #coffeeBtn {
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+            padding: 40px;
+            width: 100%;
+            border-color: rgb(226, 224, 224);
+            border-top-style: solid;
+            border-top-width: 0.5px;
+            min-height: 170px;
+
+
+            //BTN RIGHT
+
+            .buttonR {
+                border-radius: 5px;
+                background-color: $blueish;
+                border: solid;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 18px;
+                padding: 10px;
+                width: 250px;
+                height: 50px;
+                transition: all 0.5s;
+                cursor: pointer;
+
+            }
+
+            .buttonR span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .buttonR span:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+
+            }
+
+            .buttonR:hover {
+                background: $blue;
+                font-weight: 400;
+                border: none;
+
+            }
+
+            .buttonR:hover span {
+                padding-right: 25px;
+
+            }
+
+            .buttonR:hover span:after {
+                opacity: 1;
+                right: 0;
+
+            }
+
+            //BTN LEFT
+
+            .buttonL {
+                border-radius: 5px;
+                background-color: $blueish;
+                border: solid;
+                color: #FFFFFF;
+                text-align: center;
+                font-size: 18px;
+                padding: 10px;
+                width: 250px;
+                height: 50px;
+                transition: all 0.5s;
+                cursor: pointer;
+
+            }
+
+            .buttonL span {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .buttonL span:after {
+                content: '\00ab';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                left: 20px;
+                transition: 0.5s;
+
+            }
+
+            .buttonL:hover {
+                background: $blue;
+                font-weight: 400;
+                border: none;
+
+            }
+
+            .buttonL:hover span {
+                padding-left: 25px;
+
+            }
+
+            .buttonL:hover span:after {
+                opacity: 1;
+                left: 0;
+
+            }
+
+            //BEHANCE BTN
+
+            a {
+
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+
+                img {
+                    height: 16px;
+                    transition-duration: 0.5s;
+                }
+
+                &:hover {
+                    background: $pink;
+
+                    a {
+                        img {
+                            height: 18px;
+                            filter: brightness(1000%);
+                        }
+                    }
+                }
+
+            }
+
+
+
+        }
+    }
+
+
+
+
+
+
+a 
 
     // ANIMACIONES
 
