@@ -400,17 +400,14 @@ body #content #about-me {
           align-items: center;
   padding: 10px;
   height: 1000px;
+  position: relative;
 }
 
-body #content #about-me h1 {
-  font-weight: 700;
-  color: #4D4D4D;
-  padding-bottom: 10px;
-  text-decoration: underline;
-  -webkit-text-decoration-color: #333372;
-          text-decoration-color: #333372;
-  -webkit-text-decoration-style: solid;
-          text-decoration-style: solid;
+body #content #about-me #figuraUno {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 300px;
 }
 
 body #content #about-me #about-me-content {
@@ -423,7 +420,7 @@ body #content #about-me #about-me-content {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 80%;
 }
 
 body #content #about-me #about-me-content img {
@@ -431,7 +428,7 @@ body #content #about-me #about-me-content img {
 }
 
 body #content #about-me #about-me-content #about-me-text {
-  width: 400px;
+  width: 350px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -444,9 +441,22 @@ body #content #about-me #about-me-content #about-me-text {
   height: 180px;
 }
 
+body #content #about-me #about-me-content #about-me-text h1 {
+  font-weight: 700;
+  color: #000000;
+  padding-bottom: 10px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #000000;
+          text-decoration-color: #000000;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  font-size: 30px;
+}
+
 body #content #about-me #about-me-content #about-me-text h2 {
   font-size: 20px;
   color: #4D4D4D;
+  padding-bottom: 5px;
 }
 
 body #content #about-me #four-areas {
