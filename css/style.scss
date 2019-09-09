@@ -368,6 +368,20 @@ body {
                 height: 300px;
             }
 
+            #figuraDos{
+                position: absolute;
+                left: 0px;
+                bottom: 325px;
+                height: 200px;
+            }
+
+            #figuraTres{
+                position: absolute;
+                left: 0px;
+                top: 60px;
+                width: 200px;
+            }
+
            
 
             #about-me-content {
@@ -376,6 +390,9 @@ body {
                 align-items: center;
                 // background: yellow;
                 width: 80%;
+                border-style: solid;
+                border-width: 3px;
+                border-color: #D4AF37;
 
                 img {
                     height: 450px;
@@ -388,7 +405,7 @@ body {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
-                    height: 180px;
+                    height: 180px;                   
 
                     h1 {
                         font-weight: 700;

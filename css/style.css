@@ -410,6 +410,20 @@ body #content #about-me #figuraUno {
   height: 300px;
 }
 
+body #content #about-me #figuraDos {
+  position: absolute;
+  left: 0px;
+  bottom: 325px;
+  height: 200px;
+}
+
+body #content #about-me #figuraTres {
+  position: absolute;
+  left: 0px;
+  top: 60px;
+  width: 200px;
+}
+
 body #content #about-me #about-me-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -421,6 +435,9 @@ body #content #about-me #about-me-content {
       -ms-flex-align: center;
           align-items: center;
   width: 80%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #D4AF37;
 }
 
 body #content #about-me #about-me-content img {
