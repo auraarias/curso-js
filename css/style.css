@@ -273,7 +273,7 @@ body #content {
 }
 
 body #content #home {
-  background: #afafee;
+  background: url(../images/background.png);
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,15 +413,9 @@ body #content #about-me #figuraUno {
 body #content #about-me #figuraDos {
   position: absolute;
   left: 0px;
-  bottom: 325px;
+  bottom: 400px;
   height: 200px;
-}
-
-body #content #about-me #figuraTres {
-  position: absolute;
-  left: 0px;
-  top: 60px;
-  width: 200px;
+  z-index: -1;
 }
 
 body #content #about-me #about-me-content {
@@ -436,12 +430,14 @@ body #content #about-me #about-me-content {
           align-items: center;
   width: 80%;
   border-style: solid;
+  border-radius: 8px;
   border-width: 3px;
   border-color: #D4AF37;
 }
 
 body #content #about-me #about-me-content img {
-  height: 450px;
+  height: 400px;
+  margin: 30px;
 }
 
 body #content #about-me #about-me-content #about-me-text {
@@ -456,6 +452,7 @@ body #content #about-me #about-me-content #about-me-text {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   height: 180px;
+  margin-right: 30px;
 }
 
 body #content #about-me #about-me-content #about-me-text h1 {
@@ -476,6 +473,161 @@ body #content #about-me #about-me-content #about-me-text h2 {
   padding-bottom: 5px;
 }
 
+body #content #about-me #skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+body #content #about-me #skills #right {
+  border-radius: 5px;
+  background-color: #333372;
+  border: solid;
+  color: #FFFFFF;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  top: 125px;
+  right: 5px;
+}
+
+body #content #about-me #skills #right:hover {
+  background: #afafee;
+  font-weight: 400;
+  border: none;
+}
+
+body #content #about-me #skills #left {
+  border-radius: 5px;
+  background-color: #333372;
+  border: solid;
+  color: #FFFFFF;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  top: 125px;
+  left: 5px;
+}
+
+body #content #about-me #skills #left:hover {
+  background: #afafee;
+  font-weight: 400;
+  border: none;
+}
+
+body #content #about-me #skills img {
+  width: 300px;
+  z-index: -1;
+}
+
+body #content #about-me #skills h2 {
+  font-size: 20px;
+  color: #4D4D4D;
+  padding-bottom: 7px;
+  margin-top: 20px;
+  position: relative;
+  top: 0;
+}
+
+body #content #about-me #skills p {
+  font-size: 13px;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  text-align: center;
+}
+
+body #content #about-me #skills div {
+  width: 230px;
+  position: relative;
+}
+
+body #content #about-me #skills div:hover img {
+  opacity: 0;
+}
+
+body #content #about-me #skills div:hover p {
+  opacity: 1;
+  position: absolute;
+  top: 80px;
+}
+
+body #content #about-me #skills div:hover h2 {
+  top: 0;
+}
+
+body #content #about-me #skills #research {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #content #about-me #skills #web {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #content #about-me #skills #uidesign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 body #content #about-me #four-areas {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -489,24 +641,92 @@ body #content #about-me #four-areas {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 100%;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+
+body #content #about-me #four-areas #right {
+  border-radius: 5px;
+  background-color: #333372;
+  border: solid;
+  color: #FFFFFF;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  top: 125px;
+  right: 5px;
+}
+
+body #content #about-me #four-areas #right:hover {
+  background: #afafee;
+  font-weight: 400;
+  border: none;
+}
+
+body #content #about-me #four-areas #left {
+  border-radius: 5px;
+  background-color: #333372;
+  border: solid;
+  color: #FFFFFF;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  position: absolute;
+  top: 125px;
+  left: 5px;
+}
+
+body #content #about-me #four-areas #left:hover {
+  background: #afafee;
+  font-weight: 400;
+  border: none;
 }
 
 body #content #about-me #four-areas img {
-  width: 70px;
+  width: 300px;
+  z-index: -1;
 }
 
 body #content #about-me #four-areas h2 {
   font-size: 20px;
   color: #4D4D4D;
   padding-bottom: 7px;
+  margin-top: 20px;
+  position: relative;
+  top: 0;
 }
 
 body #content #about-me #four-areas p {
-  font-size: 12px;
+  font-size: 13px;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  text-align: center;
 }
 
 body #content #about-me #four-areas div {
   width: 230px;
+  position: relative;
+}
+
+body #content #about-me #four-areas div:hover img {
+  opacity: 0;
+}
+
+body #content #about-me #four-areas div:hover p {
+  opacity: 1;
+  position: absolute;
+  top: 80px;
+}
+
+body #content #about-me #four-areas div:hover h2 {
+  top: 0;
 }
 
 body #content #about-me #four-areas #leadership {

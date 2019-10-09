@@ -2,6 +2,11 @@ let nav = document.querySelector("#header-nav");
 let hideBtn = document.querySelector("#hide-button");
 let portfolioNav = document.querySelector("#nav-bar-portfolio");
 
+
+
+
+// boton de abrir y cerrar menu lateral
+
 hideBtn.addEventListener("click", () => {
     if (nav.className === "open") {
         nav.className = "close";
@@ -12,6 +17,10 @@ hideBtn.addEventListener("click", () => {
         portfolioNav.className = "close-portfolio-nav"
     }
 });
+
+
+
+// seleccion en menu de portafolio
 
 let gloot = document.querySelector("#gloot");
 let jigui = document.querySelector("#jigui");
@@ -114,6 +123,10 @@ coffee.addEventListener("mouseover", () => {
     }
 });
 
+
+
+// seleccion menu lateral principal
+
 let homeBtn = document.querySelector("#homeBtn");
 let aboutBtn = document.querySelector("#aboutBtn");
 let portfolioBtn = document.querySelector("#portfolioBtn");
@@ -158,3 +171,4 @@ contactBtn.addEventListener("click", () =>{
         contactBtn.className= "selected-item";
     }
 });
+
