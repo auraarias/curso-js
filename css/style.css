@@ -485,7 +485,6 @@ body #content #about-me #skills {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  background: blue;
   width: 100%;
   height: 350px;
   overflow: hidden;
