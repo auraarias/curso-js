@@ -170,10 +170,6 @@ body #header-nav #menu {
   border-bottom-color: #e6e6e6;
 }
 
-body #header-nav #menu li {
-  height: 100%;
-}
-
 body #header-nav #menu li a {
   color: #4D4D4D;
   font-size: 15px;
