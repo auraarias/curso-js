@@ -64,6 +64,8 @@ body {
         position: relative;
         transition-duration: 0.3s;
         z-index: 999;
+        margin-right: 4px;
+        box-shadow: 2px 0 8px -2px #0000005e;
 
         // HIDE MENU
 
@@ -245,6 +247,8 @@ body {
         flex: 1 1 auto;
         height: 100%;
         overflow-y: auto;
+        margin-left: 6px;
+        box-shadow: -2px 0 8px -2px #00000041;
 
 
         // HOME

@@ -73,6 +73,9 @@ body #header-nav {
   -webkit-transition-duration: 0.3s;
           transition-duration: 0.3s;
   z-index: 999;
+  margin-right: 4px;
+  -webkit-box-shadow: 2px 0 8px -2px #0000005e;
+          box-shadow: 2px 0 8px -2px #0000005e;
 }
 
 body #header-nav.open {
@@ -266,6 +269,9 @@ body #content {
           flex: 1 1 auto;
   height: 100%;
   overflow-y: auto;
+  margin-left: 6px;
+  -webkit-box-shadow: -2px 0 8px -2px #00000041;
+          box-shadow: -2px 0 8px -2px #00000041;
 }
 
 body #content #home {
