@@ -32,7 +32,7 @@ let coffee = document.querySelector("#coffee");
 let preview = document.querySelector("#preview");
 
 
-jigui && jigui.addEventListener("mouseover", () => {
+jigui.addEventListener("mouseover", () => {
 
     if (jigui.className != "selected") {
         preview.src = "images/jigui.png";
